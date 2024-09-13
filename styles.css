@@ -1,0 +1,61 @@
+/* styles.css */
+body {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #1e2994;
+    color: #f5eeee;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+
+.photo-container {
+    display: flex; /* Ensures images are displayed inline */
+    overflow: auto; /* Allows horizontal scrolling */
+}
+
+.photo-container img {
+    width: 300px;             /* Set the width of the images */
+    height: 300px;            /* Set the height of the images to match width for square shape */
+    object-fit: cover;        /* Cover the square area, cropping as necessary */
+    margin-right: 10px;       /* Add space between images */
+    border: 2px solid #ddd;   /* Optional: Add border to images */
+    border-radius: 8px;       /* Optional: Round the corners */
+}
+
+
+.photo-container::-webkit-scrollbar {
+    display: none;              /* For Chrome, Safari, and Opera */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    width: 100%;
+    
+}
